@@ -17,6 +17,7 @@ public class FindMax {
             max = f3;
         return max;
     }
+
     public static String maxOfString(String s1, String s2, String s3) {
         String max = s1;
         if (s2.compareTo(max) > 0)
@@ -25,6 +26,7 @@ public class FindMax {
             max = s3;
         return max;
     }
+
     public static void main(String[] args) {
         System.out.println("Welcome to the program to find maximum value using generics");
         Integer A = 50, B = 58, C = 512;
