@@ -17,11 +17,21 @@ public class FindMax {
             max = f3;
         return max;
     }
+    public static String maxOfString(String s1, String s2, String s3) {
+        String max = s1;
+        if (s2.compareTo(max) > 0)
+            max = s2;
+        if (s3.compareTo(max) > 0)
+            max = s3;
+        return max;
+    }
     public static void main(String[] args) {
         System.out.println("Welcome to the program to find maximum value using generics");
         Integer A = 50, B = 58, C = 512;
         System.out.println("The Maximum between three integers is : " + maxOfInteger(A, B, C));
         Float f1 = 7.5f, f2 = 9.2f, f3 = 7.4f;
         System.out.println("The Maximum between three float is : " + maxOfFloat(f1, f2, f3));
+        String s1 = "qabc", s2 = "rpwqr", s3 = "uwxyz";
+        System.out.println("The Maximum between three float is : " + maxOfString(s1, s2, s3));
     }
 }
