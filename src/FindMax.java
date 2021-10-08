@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class FindMax {
 
     public static Integer maxOfInteger(Integer A, Integer B, Integer C) {
