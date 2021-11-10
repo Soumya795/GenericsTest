@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class FindMax<F extends Comparable<F>> {
 
-    F[] Parameters;
+     F[] Parameters;
 
     public FindMax(F[] elements) {
         this.Parameters = elements;
@@ -12,6 +12,7 @@ public class FindMax<F extends Comparable<F>> {
         Arrays.sort(elements);
         int length = elements.length;
         T max = elements[length - 1];
+        System.out.printf("Maximum value of three is %s :  ", max);
         return max;
     }
 
@@ -25,3 +26,5 @@ public class FindMax<F extends Comparable<F>> {
         maxOfValues(stringMax);
     }
 }
+
+
